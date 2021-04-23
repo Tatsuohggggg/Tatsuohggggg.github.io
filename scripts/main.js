@@ -48,8 +48,12 @@ myImage.onclick = function(){
 
 function setUserName(){
     let myName = prompt('あなたの名前を入力してください。');
+    if(!myName || myName === null){
+        setUserName();
+    } else {
     localStorage.setItem('name', myName);
     myHeading.textContent = 'Tatsuohを構ってください、' + myName;
+    }
 }
 
 if(!localStorage.getItem('name')){

@@ -6,13 +6,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>きのつらゆき</title>
   </head>
+
   <body>
     <!--<img src="images/Discord.bk01.gif" alt="Blinking Discord">-->
       <h1>気の向くままに思ったことをつらつら書いてゆきたい</h1>
+
+      <div style="text-align:center; font-size:24pt">
+      ～<strong>一般的なHTML初心者が作りがちな初めてのWebサイト</strong>～
+    </div>
+
+      <script>
+        window.onload = function() {
+          setInterval(function() {
+            var dd = new Date();
+            document.getElementById("T1").innerHTML = dd.toLocaleString();
+          }, 1000);
+        }
+      </script>
+
+      <div style="text-align:right; font-size:24pt">
+        <p><strong>ただ今の時刻</strong></p>
+        <div id="T1"></div>
+      </div>
+    <header>
       <h2>自己紹介</h2>
+      <p>主にゲームの主人公の名前やSNSのハンドルネームにしている人格</p>
       <h3>たつお</h3>
       <img src="images/Squalll Lionheart.png" alt="My face image">
-    <p>好きなもの</p>
+    </header>
+    <p><strong>好きなもの</strong></p>
 
 <ul>
   <li>ゲーム</li>
@@ -21,7 +43,7 @@
   <p>…たまに打ちます</p>
 </ul>
 
-  <p>好きな食べ物</p>
+  <p><strong>好きな食べ物</strong></p>
     <ol>
         <li>蟹</li>
         <li>しめさば</li>
@@ -30,9 +52,26 @@
         <li>rice</li>
         <li>牛丼</li>
     </ol>
-    <p>☆蟹についての詳しいサイト☆</p>
-    <a href="https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%8B">蟹</a>
-    <button>ユーザを変更</button>
+  
+  <h4>最近やったゲーム</h4>
+  <ul>
+    <li>すばらしきこのせかい</li>
+    <li>廃深</li>
+    <li>Ultimate Chicken Horse</li>
+    <li>Monster Hunter Rise</li>
+    <li>ゼノブレイド2</li>
+  </ul>
+    <aside>
+      <h4>その他のリンク</h4>
+      <li><a href="shop.html">日々の日記</a></li>
+      <li>ゲームの感想</li>
+      <li><a href="number-guessing-game-start.html">数字当てゲーム</a></li>
+      </aside>
+
+    <button>名前を変更しますか？</button>
     <script src="scripts/main.js"></script>
+    <div>Copyright (C) 2021- Tatsuoh</div>
+    <div>最終更新:2021年04月26日</div>
+
   </body>
 </html> 

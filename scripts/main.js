@@ -49,10 +49,11 @@ myImage.onclick = function(){
 function setUserName(){
     let myName = prompt('あなたの名前を入力してください。');
     if(!myName || myName === null){
-        setUserName();
+        localStorage.setItem('name', myName);
+    myHeading.textContent = '名前がないんですか？';
     } else {
     localStorage.setItem('name', myName);
-    myHeading.textContent = 'Tatsuohを構ってください、' + myName;
+    myHeading.textContent = 'たつおのサイトへようこそ！' + myName;
     }
 }
 
@@ -60,10 +61,9 @@ if(!localStorage.getItem('name')){
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Tatsuohを構ってください、' + storedName;
+    myHeading.textContent = 'またいらっしゃったんですね！' + storedName;
 }
 
 myButton.onclick = function(){
     setUserName();
 }
-

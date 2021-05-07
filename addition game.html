@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>addition game</title>
+        
+</head>
+
+<body>
+            <script>
+                const q1 = Math.floor(Math.random() * 100);
+                const q2 = Math.floor(Math.random() * 100);
+
+                //10 + 2=? といった問題文を表示する
+                let answer = parseInt(prompt(`${q1}+${q2}=?`));
+
+                if (q1 + q2 === answer) {
+                    window.document.write('正解です！');
+                } else {
+                    document.write('不正解です。。。');
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

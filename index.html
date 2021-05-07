@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>きのつらゆき</title>
+    <link rel="icon" href="images/Squalll Lionheart.png"><!--ファビコン用-->
+    <title>Tatsuo's site</title>
   </head>
 
   <body>
@@ -15,7 +16,9 @@
       ～<strong>一般的なHTML初心者が作りがちな初めてのWebサイト</strong>～
     </div>
 
-      <script>
+    <!--<img src="wwwcount.cgi?gif" width=96 height=18 alt="Counter">カウンター用-->
+
+  <script> 
         window.onload = function() {
           setInterval(function() {
             var dd = new Date();
@@ -28,13 +31,29 @@
         <p><strong>ただ今の時刻</strong></p>
         <div id="T1"></div>
       </div>
+
+      <h2>目次</h2>
+      <ul>
+      <li><a href="#self-introduction">自己紹介</a><br></li>
+      <li><a href="#favorite">好きなもの</a><br></li>
+      <li><a href="#favorire-food">好きな食べ物</a><br></li>
+      <li><a href="#game">最近やったゲーム</a><br></li>
+      <li><a href="#other-link">その他のリンク</a></li>
+    </ul>
+
     <header>
-      <h2>自己紹介</h2>
+      <h2 id="self-introduction">自己紹介</h2>
       <p>主にゲームの主人公の名前やSNSのハンドルネームにしている人格</p>
       <h3>たつお</h3>
       <img src="images/Squalll Lionheart.png" alt="My face image">
     </header>
-    <p><strong>好きなもの</strong></p>
+
+    <table border=1><!--表を作るタグ-->
+      <tr><td>●</td><td>■</td><td>▲</td></tr>
+      <tr><td>○</td><td>□</td><td>△</td></tr>
+    </table>
+
+    <p id="favorite"><strong>好きなもの</strong></p>
 
 <ul>
   <li>ゲーム</li>
@@ -43,7 +62,7 @@
   <p>…たまに打ちます</p>
 </ul>
 
-  <p><strong>好きな食べ物</strong></p>
+  <p id="favorire-food"><strong>好きな食べ物</strong></p>
     <ol>
         <li>蟹</li>
         <li>しめさば</li>
@@ -53,19 +72,19 @@
         <li>牛丼</li>
     </ol>
   
-  <h4>最近やったゲーム</h4>
+  <h4 id="game">最近やったゲーム</h4>
   <ul>
     <li>すばらしきこのせかい</li>
     <li>廃深</li>
     <li>Ultimate Chicken Horse</li>
-    <li>Monster Hunter Rise</li>
+    <li>モンスターハンター Rise</li>
     <li>ゼノブレイド2</li>
   </ul>
     <aside>
-      <h4>その他のリンク</h4>
+      <h4 id="other-link">その他のリンク</h4>
       <li><a href="shop.html">日々の日記</a></li>
       <li>ゲームの感想</li>
-      <li><a href="number-guessing-game-start.html">数字当てゲーム</a></li>
+      <li><a target="_blank" href="number-guessing-game-start.html">数字当てゲーム</a></li>
       </aside>
 
     <button>名前を変更しますか？</button>

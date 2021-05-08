@@ -69,6 +69,7 @@ body {
 
   #new {
     /* フォントサイズなどを任意で指定する */
+    font-size: 32px;
   /*font: bold 10em / 1 Verdana, Helvetica, Arial, sans-serif;*/
   text-transform: uppercase;
   

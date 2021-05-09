@@ -67,6 +67,10 @@ body {
     font-size: 24px;
   }
 
+  #back {
+    font-size: 16px;
+  }
+
   #new {
     /* フォントサイズなどを任意で指定する */
     font-size: 32px;
@@ -81,7 +85,6 @@ body {
   -webkit-background-clip: text;
   
   /* 文字色を透明にできればよく color: transparent でも color: rgba(0, 0, 0, 0) でも可 */
-          text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   
   /* アニメーション指定 */
